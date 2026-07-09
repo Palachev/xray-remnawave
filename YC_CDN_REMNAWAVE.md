@@ -55,7 +55,6 @@ Follow redirects: Off
 TLS Profile: TLS 1.2+
 ```
 
-:contentReference[oaicite:1]{index=1}
 
 ---
 
@@ -73,7 +72,6 @@ cdn1.example.com CNAME xxxxx.cdn.yandex.net
 dig +short cdn1.example.com
 ```
 
-:contentReference[oaicite:2]{index=2}
 
 ---
 
@@ -92,8 +90,6 @@ openssl s_client -connect cdn1.example.com:443 -servername cdn1.example.com
 ```
 Verify return code: 0 (ok)
 ```
-
-:contentReference[oaicite:3]{index=3}
 
 ---
 
@@ -117,7 +113,6 @@ Ignore Query Parameters
 
 Иначе XHTTP работать не будет.
 
-:contentReference[oaicite:4]{index=4}
 
 ---
 
@@ -132,7 +127,6 @@ X-Forwarded-For
 Forwarded Host
 ```
 
-:contentReference[oaicite:5]{index=5}
 
 ---
 
@@ -155,7 +149,6 @@ HEAD
 OPTIONS
 ```
 
-:contentReference[oaicite:6]{index=6}
 
 ---
 
@@ -171,7 +164,6 @@ ufw delete allow 443/tcp
 ufw allow from <CDN_IP_RANGE> to any port 443 proto tcp
 ```
 
-:contentReference[oaicite:7]{index=7}
 
 ---
 
@@ -190,7 +182,6 @@ Host:
 cdn1.example.com
 ```
 
-:contentReference[oaicite:8]{index=8}
 
 ---
 
@@ -215,7 +206,6 @@ cdn1.example.com
 
 Остальные параметры можно оставить по умолчанию.
 
-:contentReference[oaicite:9]{index=9}
 
 ---
 
@@ -233,7 +223,6 @@ curl https://api.ipify.org
 
 Если все настроено правильно — подключение идет через CDN.
 
-:contentReference[oaicite:10]{index=10}
 
 ---
 
@@ -253,4 +242,3 @@ curl https://api.ipify.org
 - [ ] Firewall пропускает только IP CDN
 - [ ] Подключение через CDN работает
 
-:contentReference[oaicite:11]{index=11}
