@@ -1,2 +1,2 @@
 # Xray конфигурации для панели remnawave
-# [Гайд на настройку selfsteal](path/to/selfsteal.md)
+# [Гайд на настройку selfsteal](/selfsteal.md)
